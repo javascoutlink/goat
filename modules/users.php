@@ -10,12 +10,13 @@ function get_user($user_id) {
     $user_query .= "WHERE p.user_id = " . $user_id;
     $user_result = mysqli_query($conn, $user_query);
   } else {
-    echo 'Unfortunately SQL functionality is not working at the moment.';
+    HttpResponse(503);
   }
 }
 
   if (isset($conn)) {
   } else {
+    HttpResponse(503);
   }
 }
 ?>

@@ -20,4 +20,5 @@ function get_user_past_location($user_id) {
     echo 'Unfortunately SQL functionality is not working at the moment.';
   }
 }
+    HttpResponse(503);
 ?>
