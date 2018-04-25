@@ -1,8 +1,7 @@
 <?php
-#$user = "";
-#$pass = "goat";
-#$serv = "localhost";
-#$data = "goat";
-#$conn = mysqli_connect($serv, $user, $pass, $data);
+$modules = array('sql', 'html_items', 'users');
 
+foreach ($modules as $module) {
+  include "modules/" . $module . ".php";
+}
 ?>
